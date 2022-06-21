@@ -5,14 +5,15 @@ const subscriberSchema = new mongoose.Schema({
         type:       String,
         required:   true
     },
-    subscriberToChannel: {
-        type:       String,
-        required:   true
-    },
     subscribeDate: {
         type:       String,
         required:   true,
         default:    Date.now
+    },
+    isActive:{
+        type:       Boolean,
+        required:   true,
+        default:    true
     }
 })
 
